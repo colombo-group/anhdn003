@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 1</title>
+</head>
+<body>
+    <script>
+        var result = new Array();
+        for (i = 1; i<=10; i++){
+            var text = "";
+            var kq;
+            for (j = 1; j<= 10; j++){
+                kq = i*j;
+                text += '<table><tr><td style="width: 50px">' + i + " x "+ j +"</td><td> = </td><td>"+ kq +"</td></tr></table>";
+            };
+            result.push(text);
+        }
+        var html = '<h1> BẢNG CỬU CHƯƠNG </h1>'
+        +'<table border="1" style="width: 500px;">' +'<tr>' +
+                        '<td>'+ result[0]+'</td><td>'+ result[1]+ '</td><td>' + result[2] +'</td><td>'+result[3]+'</td><td>'+result[4]+'</tr>'+'<tr></td><td>'+result[5]+ '</td><td>'+result[6] + '</td><td>'+ result[7]+'</td><td>'+result[8]+'</td><td>'+result[9]+'</td>'
+                '</tr></table>';
+        document.write(html);
+    </script>
+</body>
+</html>
